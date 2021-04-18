@@ -1,0 +1,25 @@
+{
+    "name": "uwu",
+    "displayName": "UWU",
+    "description": "uwu programming language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.55.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "uwu",
+            "aliases": ["uwu programming language", "uwu"],
+            "extensions": [".uwu"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "uwu",
+            "scopeName": "source.uwu",
+            "path": "./syntaxes/uwu.tmLanguage.json"
+        }]
+    }
+}

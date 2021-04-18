@@ -1,0 +1,96 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "uwu programming language",
+	"patterns": [
+		{
+			"begin": "--",
+			"end": "\n",
+			"name": "comment.line.uwu"
+		},
+		{
+			"begin": "(write) ",
+			"end": "\n",
+			"beginCaptures": {
+				"1": {
+					"name": "keyword.other.print.uwu"
+				}
+			},
+			"patterns": [
+				{
+					"begin": "\"",
+					"end": "\"",
+					"name": "string.quoted.double.uwu"
+				},
+				{
+					"include": "#expression"
+				}
+			]
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.uwu",
+				"match": "\\b(if|then|else|var|repeat|get|fun|write|return|=>|while|do|uwu)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.uwu",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.uwu",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "keyword.other.unit.suffix.integer.uwu",
+				"match": "[0-9999999999999]"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.uwu",
+				"match": "^(/+|-|/*|\/|=|>|<|>=|<=|&|/||%|!|/^|/(|/))$"
+			}]
+		},
+		"vars": {
+			"patterns": [{
+				"name": "variable.name",
+				"match": "allah"
+			}]
+		},
+		"expression": {
+			"patterns": [
+				{
+					"include": "#operators"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#numbers"
+				},
+				{
+					"include": "#keywords"
+				}
+			]
+		}
+	},
+	"scopeName": "source.uwu"
+}
