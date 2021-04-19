@@ -43,7 +43,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.uwu",
-				"match": "\\b(if|then|else|var|repeat|get|fun|write|return|=>|while|do|uwu)\\b"
+				"match": "\\b(if|then|else|var|repeat|get|fun|write|return|import|from|while|do|uwu)\\b"
 			}]
 		},
 		"strings": {

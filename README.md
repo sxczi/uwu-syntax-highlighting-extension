@@ -1,3 +1,7 @@
-# uwu README
+# uwu programming language support extension for vscode
 
-A vscode extension to get uwu syntax highlighting on vscode.
+adds syntax highlighting support for ".uwu" files
+
+# installation
+
+move this folder into your vscode extensions folder
