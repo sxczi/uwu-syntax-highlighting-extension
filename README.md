@@ -1,7 +1,7 @@
-# uwu programming language support extension for vscode
+# What does this do?
 
-adds syntax highlighting support for ".uwu" files
+it adds syntax highlighting support for ".uwu" files
 
-# installation
+# Installation
 
 move this folder into your vscode extensions folder
